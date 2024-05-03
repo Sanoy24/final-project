@@ -1,7 +1,18 @@
+import Image from "next/image";
+import ProfileMain from "../components/profile-main";
+import ProfileSidebar from "../components/profile-sidebar";
+
 export default function Page() {
   return (
-    <div>
-      <h1>Hello from profile page</h1>
-    </div>
+    <>
+      <div className="  flex justify-center flex-row gap-24 mt-24">
+        <div className="">
+          <ProfileSidebar />
+        </div>
+        <div>
+          <ProfileMain />
+        </div>
+      </div>
+    </>
   );
 }
