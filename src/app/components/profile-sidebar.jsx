@@ -2,32 +2,22 @@ import Image from "next/image";
 
 export default function ProfileSidebar() {
   return (
-    <div className="">
-      <div className=" py-10 w-80 bg-slate-50 rounded shadow-lg">
-        <div className="">
-          <Image
-            src="/profile.jpg"
-            width={300}
-            height={300}
-            alt="Picture of the author"
-            className=" h-20 w-20 rounded-full border-4 border-white dark:border-gray-800 mx-auto object-cover"
-          />
+    <div className=" py-10 w-full bg-slate-50 rounded shadow-lg h-full">
+      <div className="avatar flex justify-center">
+        <div className="w-24 mask mask-squircle">
+          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>
-        <div className=" text-center font-bold text-xl">
-          <h1>Mokey D. Luffy</h1>
-          <h2 className=" font-normal">Doctor</h2>
-          <input type="file" name="" id="" />
-        </div>
-        <div className="flex flex-col my-4 gap-5">
-          <div className=" flex  font-bold text-2xl justify-between px-2 rounded-md py-4 shadow-lg">
-            <p className=" text-cyan-700">Number of scan</p>
-            <p className=" text-end text-red-500">100</p>
-          </div>
-          <div className=" flex  font-bold text-2xl justify-between px-2 py-4 shadow-lg rounded-md">
-            <p className=" text-cyan-700">Total number of scan</p>
-            <p className=" text-end text-red-500">300</p>
-          </div>
-        </div>
+      </div>
+      <div className=" text-center font-bold text-xl">
+        <h1 className=" pt-3">SANOY YOROM</h1>
+        <h2 className=" font-normal">Doctor</h2>
+      </div>
+      <div className="flex justify-center">
+        <a href="/profile/edit">
+          <button className=" bg-blue-600 font-medium text-white py-2 rounded px-5 justify-center hover:bg-indigo-600">
+            edit profile
+          </button>
+        </a>
       </div>
     </div>
   );

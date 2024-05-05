@@ -1,26 +1,51 @@
-import Image from "next/image";
-
-export default function ProfileSidebar() {
+export default function ProfileMain() {
+  //
   return (
-    <div className="">
-      <div className=" py-10 w-80 bg-slate-50 rounded shadow-lg">
-        <div className="">
-          <Image
-            src="/profile.jpg"
-            width={300}
-            height={300}
-            alt="Picture of the author"
-            className=" h-20 w-20 rounded-full border-4 border-white dark:border-gray-800 mx-auto object-cover"
-          />
+    <div className="flex flex-col justify-center rounded-md shadow-md px-5 h-full w-96">
+      <div>
+        <h1 className=" text-2xl text-red-500 font-semibold">Profile</h1>
+      </div>
+      <div className=" flex flex-col justify-center items-center gap-4">
+        <div className="avatar">
+          <div className="w-32 rounded">
+            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          </div>
         </div>
-        <div className=" text-center font-bold text-xl">
-          <h1>Mokey D. Luffy</h1>
-          <h2 className=" font-normal">Doctor</h2>
-          <input type="file" name="" id="" />
+        <input
+          type="file"
+          className="file-input file-input-bordered file-input-error w-full max-w-xs file-input-sm"
+        />
+      </div>
+      <form class="w-full max-w-lg">
+        <div className="flex flex-wrap flex-row gap-10 py-2">
+          <div className="">
+            <label
+              htmlFor="firstname"
+              className=" text-gray-700 text-sm font-bold"
+            >
+              firstname
+            </label>
+            <h1>SANOY</h1>
+          </div>
+          <div>
+            <label
+              htmlFor="firstname"
+              className=" text-gray-700 text-sm font-bold"
+            >
+              lastname
+            </label>
+            <h1>YOROM</h1>
+          </div>
+        </div>
+        <div className=" py-5">
+          <label htmlFor="email" className=" text-gray-700 text-sm font-bold">
+            email
+          </label>
+          <h2>sanoy@gmail.com</h2>
         </div>
         <div className="flex flex-col my-4 gap-5">
           <div className=" flex  font-bold text-2xl justify-between px-2 rounded-md py-4 shadow-lg">
-            <p className=" text-cyan-700">Number of scan</p>
+            <p className=" text-cyan-700">Number of scan today</p>
             <p className=" text-end text-red-500">100</p>
           </div>
           <div className=" flex  font-bold text-2xl justify-between px-2 py-4 shadow-lg rounded-md">
@@ -28,7 +53,7 @@ export default function ProfileSidebar() {
             <p className=" text-end text-red-500">300</p>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 }

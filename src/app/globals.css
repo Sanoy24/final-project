@@ -15,3 +15,6 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.containerWrap {
+  @apply container mx-auto max-w-4xl;
+}

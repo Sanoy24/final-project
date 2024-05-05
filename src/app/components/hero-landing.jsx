@@ -7,7 +7,7 @@ export default function Hero() {
     href: "/login",
   };
   return (
-    <div className=" flex flex-row align-middle mt-28">
+    <div className=" flex flex-row align-middle mt-20">
       <div className=" pl-10 text-slate-50  font-extrabold text-balance align-middle text-4xl">
         <h1>Precise Chest X-Ray Imaging for Accurate Diagnoses</h1>
         <h2>

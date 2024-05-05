@@ -13,4 +13,9 @@ pnpm dev
 bun dev
 ```
 
+# additional dependencies used
+
+- Daisy UI
+- React icons
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
