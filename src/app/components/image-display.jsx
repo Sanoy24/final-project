@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function ImageDisplay() {
@@ -16,7 +17,7 @@ export default function ImageDisplay() {
   };
   return (
     <div className="container mx-auto mt-8 fixed">
-      <div className="flex items-center justify-center w-full">
+      <div className="flex items-center justify-center w-full  gap-9">
         <label
           for="dropzone-file"
           className="flex flex-col items-center justify-center w-64 h-24 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
@@ -49,6 +50,13 @@ export default function ImageDisplay() {
             className="hidden"
           />
         </label>
+        <div>
+          <Link href={"/helpmodel"}>
+            <button class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none">
+              Help Model
+            </button>
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-row gap-10">
