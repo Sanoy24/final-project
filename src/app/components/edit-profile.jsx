@@ -82,6 +82,14 @@ export default function ProfileDetail() {
               className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
             />
           </div>
+          <select className="select select-info w-full max-w-xs">
+            <option disabled selected>
+              Select Profession
+            </option>
+            <option>English</option>
+            <option>Japanese</option>
+            <option>Italian</option>
+          </select>
         </div>
         <div className=" mt-5 gap-6 flex text-center self-center justify-center">
           <button
@@ -91,7 +99,7 @@ export default function ProfileDetail() {
             Update
           </button>
         </div>
-        <div className=" h-20 mb-8"></div>
+        <div className=" h-4"></div>
       </form>
     </div>
   );

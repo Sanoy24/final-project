@@ -1,4 +1,4 @@
-import ProfileDetail from "@/app/components/profile-detail";
+import ProfileDetail from "@/app/components/edit-profile";
 
 export default function Page() {
   return (
