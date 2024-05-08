@@ -27,14 +27,6 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-
-        <div className="avatar pt-2 content-center">
-          <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-            <a href="/profile">
-              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   );
