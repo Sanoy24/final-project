@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { redirect, useRouter } from "next/navigation";
-import { useReducer, useState } from "react";
+import { useState } from "react";
+import labels from "../util/labels";
 
 export default function HelpModel() {
   const [imageName, setImageName] = useState(null);
@@ -31,7 +31,7 @@ export default function HelpModel() {
               />
               <label
                 for="file"
-                className="relative flex min-h-[200px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center hover:cursor-pointer"
+                className="relative flex min-h-[200px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center cursor-pointer"
               >
                 <div>
                   <span className="mb-2 block text-xl font-semibold text-[#07074D]">
@@ -54,6 +54,18 @@ export default function HelpModel() {
                 </span>
               </div>
             </div>
+          </div>
+          <div className="block my-2">
+            <select className="select select-info w-full max-w-xs">
+              <option disabled selected>
+                Select label
+              </option>
+              {labels.map((options) => (
+                <option value={options.name} key={options.id}>
+                  {options.name}
+                </option>
+              ))}
+            </select>
           </div>
           <div>
             <Link href={"/scan"}>

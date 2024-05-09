@@ -88,13 +88,15 @@ export default function ImageDisplay() {
             </div>
           )}
         </div>
-        <div className=" mt-5">
-          <h1 className=" text-2xl font-bold">Description</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-            eligendi!
-          </p>
-        </div>
+        {originalImage && (
+          <div className=" mt-5">
+            <h1 className=" text-2xl font-bold">Description</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, eligendi!
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
